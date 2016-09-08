@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html>
+    <head> <!-- The head tag includes important information about the page. The head tag is also used for metadata, CSS and Javascript -->
+        <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
+      This will allow the browser to display certain characters (such as non-Roman letters) correctly. You should include this line in the head of all of your webpages. -->
+        <title>Polo Martin's Notes</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+        <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML -->
+    </head>
+    <body>
+      <!-- The body tag is where the "flesh" of your HTML goes -->
+      <!-- Write your HTML here -->
+     <div class="first-div">
+      <div class="surrounding">
+
+        <img src="images/network.jpg" alt="image of a network"> <!-- this is the source of the image I used: https://acloserlisten.files.wordpress.com/2014/03/tilman-robinson.jpg -->
+
+       <div class="lesson">
+
+       	 <h1 class="title">Lesson 0: How the Internet Works</h1>
+       </div>
+         <div><h2 class="idea">Internet and HTML</h2></div>
+          <div>
+           <p class="text-alignment">
+            The <span class="bold">World Wide Web</span> is the sum of all <span class="italic">Web Pages</span>. These are documents written in <span class="bold">HTML</span> (<span class="italic">Hypertext Markup Language</span>). They are connected and form a web thanks to <span class="bold">Hyperlinks</span>.
+           </p>
+          </div>
+          <div>
+           <p class="text-alignment">
+            All types of files can be found on the web such as plain text, videos, images, music, and more. <span class="bold">HTML</span> is made of text content, markup, references  to other documents and links to other pages.
+           </p>
+          </div>
+
+         <div><h2 class="idea">Web browsers and HTTP</h2></div>
+          <div>
+           <p class="text-alignment">
+           	A <span class="bold">Web browser</span> allows to display those documents on a computer by making requests to the servers through the <span class="bold">Internet</span> (the world's largest network).
+           </p>
+          </div>
+          <div>
+           <p class="text-alignment">
+           	These requests use the <span class="bold">HTTP</span> protocol to communicate with <span class="bold">servers</span>, which are bigger versions of a computer and host the files.
+           </p>
+
+         </div>
+
+       <div class="lesson">
+       	 <h1 class="title">Lesson 1: Introduction to HTML</h1>
+       </div>
+         <div><h2 class="idea">HTML Markup</h2>
+          <div>
+           <p class="text-alignment">
+           	<span class="italic">Markup</span> is a text that is surrounded by an opening tag and a closing tag. A tag is contained in brackets. Some don't require a closing tab. These are called "void" tags. An <span class="italic">element</span> is everything within a set of opening and closing tags.
+           </p>
+          </div>
+         </div>
+
+         <div><h2 class="idea">Computers are stupid</h2>
+          <div>
+           <p class="text-alignment">
+            If a programmer doesn't write code carefully following the syntax, the computer might not understand his instructions.
+            Computers are sensitive to typos and mistakes.
+           </p>
+          </div>
+          <div>
+           <p class="text-alignment">
+            That is why many problems could arise if a tag is not closed. For instance, everything will be italicised after an (<span class="italic">emphasis tag</span>) if it is not closed.
+           </p>
+          </div>
+         </div>
+
+         <div><h2 class="idea">Attributes, inlines and blocks</h2>
+          <div>
+           <p class="text-alignment">
+           	An <span class="bold">attribute</span> is a property of an HTML element. A tag can have multiple attributes.
+            For example, the anchor tag allows to link to <a href="https://www.reddit.com">another URL</a>.
+           </p>
+          </div>
+          <div>
+           <p class="text-alignment">
+            There are two sorts of tags: <span class="bold">inline</span> and <span class="bold">blocks</span>.
+            <!-- For example, inline tags are <br> <b> <em> <img> <a> <span> <strong> and blocks <p> <div> or <form>-->
+            The <span class="italic">Break tag</span> and the <span class="italic">Image tag</span> are <span class="bold">void tags</span> because they have no content. <!-- the image tag works like this: <img src="URL" alt="text"> an alternate text is needed if the image doesn't load ( broken requests)  -->
+           </p>
+         </div><h2 class="idea">Structure of HTML</h2>
+         <div>
+           <p class="text-alignment">
+            <span class="italic">HTML</span> uses <span class="bold">indentations</span> to make a piece of code more coherent and structured.
+           </p>
+           <p class="text-alignment">
+            <span class="italic">Indentation</span> represents a new idea. In HTML, it <span class="italic">increases</span> when an idea begins and <span class="italic">decreases</span> when this idea is finished.
+            In order to succesfully display a Web page, it is also important to explain how a piece of programming code works for another person to quickly understand it.
+           </p>
+           <p class="text-alignment">
+           	Also, programmers can't remember everything. If they forget a detail they can look it up.
+           </p>
+          </div>
+         </div>
+
+       <div class="lesson">
+       	 <h1 class="title">Lesson 2: HTML and CSS Languages</h1>
+       </div>
+         <div><h2 class="idea">A website like a house</h2></div>
+          <div>
+           	 <ul class="text-alignment" style="list-style-type: none"><li>If we use the analogy of a website as a house, then:</li><li>- HTML files are like its <span class="bold">structure</span> (walls, rooms, kitchen, etc.)</li>
+         	 <li>- CSS files are like the <span class="bold">style</span> of your house (colors, decoration, etc.)</li>
+         	 <li>- Javascript files are like the <span class="bold">interactive</span> components (tv remote, garage-door opener, etc.)</li>
+         	 </ul>
+          </div>
+
+         <div><h2 class="idea">Tree-house structure</h2>
+          <div>
+           <p class="text-alignment">
+           	The code of a Web page is a <span class="bold">Tree-like structure</span>. When programmers talk about the <span class="bold">DOM </span><span class="italic">(Document Object Model)</span> they are talking about this tree-like structure, which comes from the fact that the elements can have other elements inside of them. The more indented an element is, the more deeply nested its corresponding "box" is.
+           </p>
+          </div>
+
+         </div>
+
+         <div><h2 class="idea">A collection of boxes</h2>
+          <div>
+           <p class="text-alignment">
+           	A web page is full of invisible boxes everywhere. Everything on a web page is actually a box but it is possible to change the shapes of the elements using styles.
+           </p>
+          </div>
+          <div>
+           <p class="text-alignment">
+           	Thinking about how to arrange and use those boxes is called <span class="italic">Boxifying Design</span>.
+           </p>
+          </div>
+         <div><h2 class="idea">Developer Tools</h2>
+          <div>
+          	<p class="text-alignment">
+          	 The Developer Tools option in Google is useful. It allows to vizualize your code, to make changes to it, and test it without saving the files.
+          	</p>
+          </div>
+
+         </div>
+         </div>
+
+       <div class="lesson">
+       	 <h1 class="title">Lesson 3: CSS style and HTML structures</h1>
+       </div>
+         <div><h2 class="idea">Coding better</h2>
+          <div>
+           <p class="text-alignment">
+             It is important to avoid repetition to write good code!
+    	     There are some benefits to this. It allows to save time, it helps to avoid mistakes and/or omissions. It is important to work more efficiently and to write more readable code.
+           </p>
+          </div>
+          <div>
+           <p class="text-alignment">
+           	Commenting the code allows to communicate to others and helps you also to explain what you are doing. In CSS, code comments begin with <span class="bold">/*</span> and end with <span class="bold">*/</span>
+           </p></div>
+         </div>
+
+         <div><h2 class="idea">Cascading Style Sheets</h2>
+          <div>
+           <p class="text-alignment">
+            In CSS, a <span class="bold">selector</span> defines the <span class="bold">elements</span> of the page that will be applied a <span class="bold">style</span>.
+            You can add style to a tag throughout the page or to a class, you can also combine <span class="bold">selectors</span>. CSS is like a <span class="italic">search and replace</span> tool.
+           </p>
+          </div>
+          <div>
+         	<ul class="text-alignment" style="list-style-type: none">
+         	<li>Where you define the rules and in what order they are applied matters in CSS.
+         	The application of styles follows hierarchical rules. Styles are applied in the following order:</li>
+         	<li>1. the default style of a browser</li>
+         	<li>2. the stylesheet in a separate file</li>
+         	<li>3. stylesheet inside HTML</li>
+         	<li>4. inline style in an element</li>
+         	</ul>
+          </div>
+          <div>
+           <p class="text-alignment">
+          	Also, rules are applied to the elements they match and to their child elements (within those elements). If a child's element has multiple, overlapping rules that apply to it, the most specific rule always takes effect.
+           </p>
+          </div>
+         </div>
+
+         <div><h2 class="idea">Positionning boxes</h2>
+          <div>
+           <p class="text-alignment">
+           	Setting the <span class="bold">box-sizing</span> property to <span class="bold">border-box</span>  makes the layout process easier (the size of the boxes can be set by a percentage instead of pixels).
+           </p>
+          </div>
+          <div>
+           <p class="text-alignment">
+           	One of the most interesting CSS's functions is the <span class="bold">flex-box</span> attribute. It helps positioning the boxes next to each other, so that a programmer can use all the space on a webpage.
+           </p>
+          </div>
+         </div>
+
+         <div><h2 class="idea">Refining code</h2>
+          <div>
+           	<ul class="text-alignment" style="list-style-type: none">
+           	<li>To <span class="bold"><span class="italic">code, text, refine</span></span> is a pattern of coding. Follow these steps to upgrade the quality of your code:</li>
+         	<li>1. Look for natural boxes (in the webpage)</li>
+         	<li>2. Look for respected styles and similar elements</li>
+         	<li>3. Write your HTML</li>
+         	<li>4. Apply your styles (from biggest to smallest)</li>
+         	<li>5. Fix things</li>
+         	</ul>
+          </div>
+          <div>
+           <p class="text-alignment">
+         	It is possible to validate your HTML and CSS so that others know it complies with standards. Click <a href="https://validator.w3.org/">here</a> for HTML and <a href="http://jigsaw.w3.org/css-validator">here</a> for CSS.
+           </p>
+          </div>
+         </div>
+        <img src="http://goo.gl/TRRDzs" alt="image of a network"> <!-- this is the source of the image I used: https://acloserlisten.files.wordpress.com/2014/03/tilman-robinson.jpg -->
+      </div>
+     </div>
+    </body>
+</html>
